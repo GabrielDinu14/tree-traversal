@@ -18,11 +18,10 @@ jobs:
         shell: bash
         run: sudo apt install python3-pip
              
-      - name: Install pip
+      - name: Install pytest
         shell: bash
         run: pip3 install pytest
 
       - name: Run_tests
         shell: bash
-        run: |
-          pytest -v
+        run: pytest -v
