@@ -9,6 +9,11 @@ jobs:
     name: Run_tests
     runs-on: ubuntu-latest
     steps:
+      - name: Idk
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+        
       - name: Run_tests
         shell: bash
         run: |
